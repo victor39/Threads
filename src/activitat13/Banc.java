@@ -18,22 +18,19 @@ public class Banc {
 		this.saldo=saldo;
 		
 	}
-	public  synchronized void  posarDiners(float diners) {
-		Banc banc = new Banc(saldo);
-		float s1 = banc.getSaldo();
+	public synchronized void posarDiners(float diners) {
+		float s1 = getSaldo();
 		float s2 = s1+diners;
-		banc.setSaldo(s2);
 		System.out.println(Thread.currentThread().getName() + " " + this.toString() + " " + s1 + "+" + diners + "=" + s2);
+		setSaldo(s2);
 	}
 	
 	public synchronized void treureDiners(float diners) {
-		Banc banc = new Banc(saldo);
-		float s1 = banc.getSaldo();
+		float s1 = getSaldo();
 		float s2 = s1-diners;
-		banc.setSaldo(s2);
 		System.out.println(Thread.currentThread().getName() + " " + this.toString() + " " + s1 + "-" + diners + "=" + s2);
-	}
+		setSaldo(s2);
+	}	
 	
-
 
 }

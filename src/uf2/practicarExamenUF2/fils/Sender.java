@@ -7,8 +7,6 @@ public class Sender implements Runnable{
 	private static String info;
 	static String infos[] = new String [] {"informacio privada 1 ","informacio privada 2","informacio3","informacio4","informacio5","fi"};
 
-
-
 	public Sender (Packet paquet, String infos[]){
 		this.paquet=paquet;
 		this.info=info;
@@ -34,7 +32,6 @@ public class Sender implements Runnable{
 					// el productor crida a posar nom i li pasa un nom
 					paquet.enviaPaquet(info);
 					Thread.sleep(100);
-					System.out.println("Fi del envio ");
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

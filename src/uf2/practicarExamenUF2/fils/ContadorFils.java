@@ -16,9 +16,8 @@ public class ContadorFils implements  Runnable{
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-	
 		ContadorFils contador = new ContadorFils ("contador1 ", 30);
-		ContadorFils con2 = new ContadorFils("contador 2 " , 10);
+		ContadorFils con2 = new ContadorFils("contador2 " , 10);
 
 		
 		Thread t1 = new Thread (contador);

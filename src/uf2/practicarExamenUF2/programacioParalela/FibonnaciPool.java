@@ -6,7 +6,7 @@ import java.util.concurrent.RecursiveTask;
 
 public class FibonnaciPool extends RecursiveTask<ArrayList <Integer>>{
 	
-	private static final int LLINDAR_SEQ = 5;
+	private static final int LLINDAR_SEQ = 1;
 	static ArrayList <Integer> numFibonnaci = new ArrayList <Integer> ();
 	static ArrayList <Integer> total = new ArrayList <Integer> ();
 

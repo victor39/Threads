@@ -19,7 +19,7 @@ public class OperacioBancaria  implements Runnable {
 			
 			// aqui decidimos que funcion hacer , si el diner es inferior fa un treure si no , un posar
 			if (diners < 0){
-				banc.treureDiners(diners);
+				banc.treureDiners(-diners);
 			}
 			else banc.posarDiners(diners);
 		}
@@ -34,7 +34,6 @@ public class OperacioBancaria  implements Runnable {
 		//aixi fem tot els fils que calgui i cadascun fara la operacio
 				Thread t1 = new Thread(new OperacioBancaria(op,banc));
 				t1.start();
-			
 			}
 			
 		

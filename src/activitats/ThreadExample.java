@@ -10,16 +10,12 @@ public class ThreadExample  extends Thread{
 	@Override
 	public void run() {
 			try {
-				
-				
 				for (int i = 0; i <6 ; i++) {
 					this.getName();
 					System.out.println(this.getName() + ":" + i);
 			}
 				Thread.sleep(1);
 			
-		
-				
 			
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

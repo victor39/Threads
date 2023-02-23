@@ -56,9 +56,7 @@ public class ProgramacioMultiproces {
         }else{
         	
         }
-        	
-        
-          
+ 
         int exit = process.waitFor();
 		System.out.println("Exit con error codigo en :" + exit);	
 		

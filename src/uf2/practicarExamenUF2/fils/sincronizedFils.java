@@ -32,10 +32,7 @@ public class sincronizedFils  extends Thread {
 	                // TODO Auto-generated catch block
 	                e.printStackTrace();
 	            }
-
-
 	      }
-
 
 	  public static void main(String[] args) throws InterruptedException {
 	            // TODO Auto-generated method stub

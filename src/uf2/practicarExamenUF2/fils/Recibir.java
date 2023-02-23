@@ -18,7 +18,7 @@ public class Recibir implements Runnable{
 				info = paquet.rebrePaquet();
 				System.out.println("Paquet rebut , obrint  : " + info);
 				Thread.sleep(100);
-				if (info.equalsIgnoreCase("rebut")) break;
+				if (info.equalsIgnoreCase("fi")) break;
 				/*rebut=true;
 				if (rebut==true) break;*/
 			} catch (InterruptedException e) {
